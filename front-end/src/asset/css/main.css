@@ -1,0 +1,43 @@
+#sousmenu {
+  text-align: center;
+  width: 600px;
+  height: 20px;
+}
+
+#sousmenu a {
+  text-decoration: none;
+}
+
+#Smenu {
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+}
+
+#Ensemble {
+  overflow: auto;
+  height: auto;
+}
+
+section {
+  background: white;
+  width: 600px;
+  height: 200px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  border-top: 2px solid #606060;
+  border-bottom: 2px solid #606060;
+}
+
+article {
+  background: white;
+  width: 600px;
+  height: 700px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 2px solid #606060;
+  border-bottom: 2px solid #606060;
+}

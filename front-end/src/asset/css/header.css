@@ -1,0 +1,100 @@
+ul {
+  position: relative;
+  width: 700px;
+  margin: 20px auto;
+  white-space: normal;
+  text-align: center;
+}
+ul li {
+  display: inline;
+  text-align: center;
+}
+ul li a {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 10px;
+  bottom: 0;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #cc0026;
+  text-decoration: none;
+  /*transition*/
+  -webkit-transition: width 0.3s, right 0.3s;
+  -moz-transition: width 0.3s, right 0.3s;
+  -o-transition: width 0.3s, right 0.3s;
+  transition: width 0.3s, right 0.3s;
+}
+ul li:nth-child(1) a {
+  width: 4em;
+}
+ul li:nth-child(2) a {
+  width: 6em;
+}
+ul li:nth-child(3) a {
+  width: 6em;
+}
+ul li:nth-child(4) a {
+  width: 9em;
+}
+ul li:nth-child(5) a {
+  width: 6em;
+}
+ul li:last-child a::after {
+  content: "";
+  position: absolute;
+  right: inherit;
+  bottom: -3px;
+  width: inherit;
+  height: 3px;
+  background: #cc0026;
+  pointer-events: none;
+  /*transition*/
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+ul li:nth-child(1) ~ li:last-child a {
+  right: 26.5em;
+  width: 3em;
+} /*Menu home*/
+ul li:nth-child(2):hover ~ li:last-child a {
+  right: 21em;
+  width: 4em;
+}
+ul li:nth-child(3):hover ~ li:last-child a {
+  right: 14.5em;
+  width: 5em;
+}
+ul li:nth-child(4):hover ~ li:last-child a {
+  right: 7em;
+  width: 5em;
+}
+ul li:nth-child(5):last-child:hover a {
+  right: 0;
+  width: 5em;
+}
+ul li:hover ~ li:last-child a::after,
+ul li:last-child:hover a::after {
+  background: #cc0026;
+}
+ul li:last-child a {
+  min-width: 5em;
+  max-width: 5em;
+}
+ul li a:hover,
+ul li a:focus {
+  color: #cc0026;
+  background-color: rgba(255, 255, 255, 0.6);
+  /*transition*/
+  -webkit-transition: width 0.3s, right 0.3s, background-color 0.3s;
+  -moz-transition: width 0.3s, right 0.3s, background-color 0.3s;
+  -o-transition: width 0.3s, right 0.3s, background-color 0.3s;
+  transition: width 0.3s, right 0.3s, background-color 0.3s;
+}
+ul li a:focus {
+  border-bottom: 3px solid #cc0026;
+}
